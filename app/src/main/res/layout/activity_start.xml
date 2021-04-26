@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/image"
+        android:src="@drawable/webrtc"
+        android:layout_marginBottom="16dp"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_below="@+id/image"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/teal_700"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="16dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:text="Kotlin Sample"
+                android:elevation="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:padding="16dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/curve_background"
+                android:hint="Enter Meeting ID"
+                android:id="@+id/meeting_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:id="@+id/start_meeting"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cornerRadius="8dp"
+                    android:textColor="@color/teal_700"
+                    android:layout_weight="1"
+                    app:backgroundTint="@color/white"
+                    android:text="Start Call"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:id="@+id/join_meeting"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cornerRadius="8dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/teal_700"
+                    app:backgroundTint="@color/white"
+                    android:text="Join Call"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
