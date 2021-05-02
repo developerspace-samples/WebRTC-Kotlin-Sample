@@ -23,7 +23,7 @@ An android application which uses WebRTC and Firestore as signaling server to su
 - You can clone the project from the WebRTC Kotlin Sample repository.
 
 ```// Clone this repository
-  git clone https://github.com//WebRTC-Kotlin-Sample.git
+  git clone https://github.com/developerspace-samples/WebRTC-Kotlin-Sample.git
 ```
 
 - Please make sure to create a Firebase Project and set-up with this app. You need to add `google-service.json` file of your Firebase project in your `app` folder.
